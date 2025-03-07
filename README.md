@@ -41,8 +41,6 @@ pip install -e .
 # pip install flash-attn --no-build-isolation --no-cache-dir
 ```
 
-
-
 ## Training
 
 1. Prepare data
@@ -85,7 +83,7 @@ Training script with DeepSpeed ZeRO-3: [`finetune.sh`](https://github.com/haotia
 
 ## Citation
 
-If you find LLaVA useful for your research and applications, please cite using this BibTeX:
+If you find GEM useful for your research and applications, please cite using this BibTeX:
 ```bibtex
 @misc{liu2024llavanext,
     title={LLaVA-NeXT: Improved reasoning, OCR, and world knowledge},
