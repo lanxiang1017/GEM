@@ -1,10 +1,14 @@
 # GEM
 
 <p align="left">
-    <img src="pics/logo.png" width="5%">
+    <img src="pics/logo.png" width="8%">
+    <strong>Empowering MLLM for Grounded ECG Understanding with Time Series and Images</strong> 
+    <a href="https://arxiv.org/abs/2310.03744">[Paper]</a>
 </p>
-**Empowering MLLM for Grounded ECG Understanding with Time Series and Images** [[Paper](https://arxiv.org/abs/2310.03744)]
 
+<p align="left">
+    <img src="pics/fig1_v.png" width="80%">
+</p>
 
 ## Install
 
