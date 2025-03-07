@@ -7,7 +7,7 @@
 </p>
 
 <p align="left">
-    <img src="pics/fig1_v.png" width="80%">
+    <img src="pics/fig1_v.png" width="90%">
 </p>
 
 ## Install
