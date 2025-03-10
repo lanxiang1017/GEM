@@ -1,0 +1,5 @@
+# config/config.yaml
+response_key: 'response'
+error_key: 'error'
+id_key: 'local_path'
+prompt_key: 'prompt'

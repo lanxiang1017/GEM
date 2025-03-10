@@ -1,0 +1,53 @@
+# Your task: Interpret the provided ECG image, identify key features and abnormalities in each lead, and generate a clinical diagnosis that is supported by the observed evidence.
+
+## Key objectives:
+    1. Simulate a Realistic Diagnostic Process: The interpretation should reflect how a doctor would analyze an ECG, ask clarifying questions, and arrive at a diagnosis.
+    2. Grounded ECG Understanding: The analysis should be based on specific ECG features and explicitly reference these features as evidence.
+    3. Evidence-Based Reasoning: The diagnosis should be supported by clear, logical reasoning tied to the ECG findings.
+
+## Guidelines for the ECG analysis:
+    1. Data:
+        ECG image: an image that display the 12-lead ECG tracings. Make the task centered on the ECG image, assuming direct ECG image analysis.
+        Machine measurements: A time-ordered list of ECG features computed for each heartbeat in every lead. Each entry in the list corresponds to the features calculated for a single heartbeat. 
+
+    2. Act as a cardiologist and use medical knowledge to analyze the provided ECG image step-by-step:
+        Initial Analysis: Analyze the provided ECG image to identify key features such as rhythm, intervals, and any apparent abnormalities.
+        Detailed Reasoning: Explain your thought process step-by-step, referencing specific ECG features (e.g., "The ST segment is elevated in leads V1-V4, which suggests anterior myocardial infarction").
+        Evidence-Based Diagnosis: Propose a diagnosis or differential diagnoses, justifying your conclusions with explicit ECG data.
+
+    3. When analyzing the ECG image, carefully analyze each lead:
+        Lead I: Examine the QRS amplitude and duration, along with ST segment and T wave morphology. Abnormalities may indicate lateral wall issues such as left ventricular hypertrophy, bundle branch block, or lateral ischemia/infarction.
+        Lead II: Look at the P wave amplitude and duration to assess right or left atrial enlargement; the PR interval can reveal conduction delays. ST and T wave changes here suggest inferior wall ischemia or infarction.
+        Leads III and aVF: Primarily reflect inferior wall status. Abnormal Q waves, along with ST segment and T wave changes, point toward inferior infarction or ischemia.
+        Lead aVL: Focuses on the high lateral region; QRS, ST, and T wave abnormalities here suggest high lateral ischemia or infarction.
+        Lead aVR: ST elevation may indicate left main or multivessel disease, and T wave inversion can be associated with ventricular arrhythmia.
+        Lead V1: An increased R wave, a characteristic rsR′ pattern, and ST-T changes help identify right ventricular hypertrophy, right bundle branch block, or ischemia.
+        Leads V2–V4: Assessing the anterior or anteroseptal regions. The presence of Q waves, along with ST segment and T wave deviations, suggests anterior wall infarction or ischemia.
+        Leads V5–V6: Focus on the lateral wall, where similar QRS, ST, and T wave changes can indicate lateral ischemia or infarction.
+
+    4. When analyzing the machine measurements, you should aware that: 
+        a. If any abnormalities appear in the computed measurements that are not mentioned in the report, you must strictly follow and trust the report. 
+        b. Evaluate and interpret the machine measurements as if you had computed them yourself. In your analysis, refer to these values as your own computed measurements rather than using phrases like "machine measurements provided".
+
+## Guidelines for the response generation:
+    1. Synthesize your findings to deduce a likely diagnosis or set of diagnoses. Clearly explain how the evidence supports your conclusion.
+    2. Ensure your diagnosis is comprehensive and strictly based on the report. Do not include diagnosis that not mentioned in the report. 
+    3. Make sure your diagnosis are grounded in the given ECG image and machine measurements, and you should explicitly reference (e.g., specify lead and the position of the abnormal heartbeat).
+    4. Strictly follow the output format and requirements specified in your task instructions.
+    5. The given report only served as the ground truth for you to analyze the ECG image. The generated text must not show that you are aware of the existence of the report.
+    6. Never make up explanations.
+
+## ECG Report: 
+{{report}}
+
+## ECG Machine Measurements:
+{{machine_measurements}}
+
+## Generataion rule
+The generated text must not show that you are aware of the existence of the report.
+Do not include phrases like "Based the report", or "Given the ECG report".
+The primary objective is to analyze the ECG and identify evidence that supports the results. The analysis should focus solely on the ECG itself, never analyze the report.
+
+## Present your work in this format:
+
+**Response:** [Comprehensive response following the task's guidlines, strictly based on the report. Using a complete paragraph with more natural expression. Do not use a list format. Limit your responses within 300 words.]

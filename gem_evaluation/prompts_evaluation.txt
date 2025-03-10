@@ -1,0 +1,62 @@
+# Your task: Evaluate the alignment and quality of a generated ECG interpretation by comparing it to a ground truth clinician’s interpretation.
+
+## Evaluation Criteria:
+
+    1. DiagnosisAccuracy: Evaluates whether the generated diagnosis is correct, specific, and supported by ECG findings.
+        - Scoring
+            +2 per diagnosis: Each correctly identified key diagnosis with supporting ECG features.
+            +1 per diagnosis: Each mostly correct diagnosis but lacking key supporting details.
+            +0 per diagnosis: Each incorrect or vague diagnosis not supported by ECG features.
+
+    2. AnalysisCompleteness: Checks if all key ECG components (rhythm, intervals, waveforms, and lead-specific findings) are discussed.
+        - Scoring
+            +1 per feature: For each correctly addressed key ECG feature (e.g., rhythm, PR interval, QRS duration, ST segment, T wave morphology).
+            +0 per missing feature: For each key feature omitted or inaccurately described.
+
+    3. AnalysisRelevance: Assesses whether each provided explanation directly supports the diagnosis.
+        - Scoring
+            +2 per feature or per lead: Each point that strongly supports the diagnosis with clear ECG evidence.
+            +1 per feature or per lead: Some points are relevant but not fully justified.
+            +0: Includes unrelated or misleading explanations.
+            
+    4. LeadAssessmentCoverage: Evaluates how many of the 12 ECG leads are analyzed.
+        - Scoring
+            +1 per lead: For each lead adequately assessed.
+            +0 per missing lead: For each lead omitted or inaccurately described.
+
+    5. LeadAssessmentAccuracy: Checks if the described lead findings (e.g., QRS, ST, T waves, amplitude, intervals, ST segments) match standard ECG interpretation.
+        - Scoring 
+            +2 per lead: Findings closely match expected values.
+            +1 per lead: Findings are somewhat accurate but have minor inconsistencies.
+            +0 per lead: Findings contradict ECG norms.
+
+    6. GroundedECGUnderstanding: Determines if the interpretation references actual ECG features (e.g., QRS amplitude, PR interval) instead of generic terms.
+        - Scoring (0-100)
+            100: ECG findings are comprehensively cited, linked to diagnoses, and cover all relevant ECG features.
+            80: ECG findings are explicitly cited and linked to diagnoses.
+            50: Some ECG references exist but are incomplete.
+            0: Lacks specific waveform references.
+
+    7. EvidenceBasedReasoning: Evaluates whether the diagnosis follows logical, evidence-supported steps.
+        - Scoring (0-100)
+            100: Findings logically progress to diagnosis with thorough and clear justifications covering all necessary steps.
+            80: Findings logically progress to diagnosis with clear justifications.
+            50: Some reasoning exists but lacks complete step-by-step analysis.
+            0: Reasoning is unclear or not derived from ECG findings.
+
+    8. RealisticDiagnosticProcess: Assesses if the model mimics how a clinician interprets an ECG, considering all relevant factors.
+        - Scoring (0-100)
+            100: The analysis follows a structured clinical approach and considers all relevant clinical factors.
+            80: The analysis follows a structured clinical approach.
+            50: Some clinical reasoning is present but incomplete.
+            0: The approach lacks structured clinical reasoning.
+
+    NOTE: Each score must be calculated based on strict criteria to ensure objective evaluation.
+
+## Generated ECG Interpretation: 
+{{generated}}
+
+## Ground Truth Clinician’s Interpretation:
+{{groundtruth}}
+
+**Response:** [Please organize your output in a JSON format for each criterion, including a brief explanation for each aspect. Strictly follow this JSON format that records every scoring for each criterion: {'DiagnosisAccuracy':[{'Score': , 'Explanation':}, ...], 'AnalysisCompleteness':[{'Score': , 'Explanation':}, ...], 'AnalysisRelevance':[{'Score': , 'Explanation':}, ...], 'LeadAssessmentCoverage':[{'Score': , 'Explanation':}, ...], 'LeadAssessmentAccuracy':[{'Score': , 'Explanation':}, ...], 'GroundedECGUnderstanding':[{'Score': , 'Explanation':}, ...], 'EvidenceBasedReasoning':[{'Score': , 'Explanation':}, ...], 'RealisticDiagnosticProcess':[{'Score': , 'Explanation':}, ...]}]

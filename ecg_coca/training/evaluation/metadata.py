@@ -1,0 +1,11 @@
+zero_shot_class = {"ptbxl_super_class": ['CD', 'HYP', 'MI', 'NORM', 'STTC'],
+                   "ptbxl_sub_class": ['AMI', 'CLBBB', 'CRBBB', 'ILBBB', 'IMI', 'IRBBB', 'ISCA', 'ISCI',
+                                       'ISC_', 'IVCD', 'LAFB/LPFB', 'LAO/LAE', 'LMI', 'LVH', 'NORM',
+                                       'NST_', 'PMI', 'RAO/RAE', 'RVH', 'SEHYP', 'STTC', 'WPW', '_AVB'],
+                   "ptbxl_form": ['ABQRS', 'DIG', 'HVOLT', 'INVT', 'LNGQT', 'LOWT', 'LPR', 'LVOLT',
+                                  'NDT', 'NST_', 'NT_', 'PAC', 'PRC(S)', 'PVC', 'QWAVE', 'STD_',
+                                  'STE_', 'TAB_', 'VCLVH'],
+                   "ptbxl_rhythm": ['AFIB', 'AFLT', 'BIGU', 'PACE', 'PSVT', 'SARRH', 'SBRAD', 'SR',
+                                    'STACH', 'SVARR', 'SVTAC', 'TRIGU'],
+                   "cpsc2018": ["NORM", "AFIB", "1AVB", "LBBB",
+                             "RBBB", "PAC", "PVC", "STD", "STE"]}
