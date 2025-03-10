@@ -26,7 +26,6 @@ checkpoints
 ckpts*
 
 .ipynb_checkpoints
-*.ipynb
 
 # DevContainer
 !.devcontainer/*
