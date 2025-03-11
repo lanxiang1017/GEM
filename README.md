@@ -105,6 +105,7 @@ For ECG-Bench:
 
 If you find GEM helpful for your research and applications, please cite our paper:
 
+```bibtex
 @misc{lan2025gemempoweringmllmgrounded,
       title={GEM: Empowering MLLM for Grounded ECG Understanding with Time Series and Images}, 
       author={Xiang Lan and Feng Wu and Kai He and Qinghao Zhao and Shenda Hong and Mengling Feng},
@@ -114,6 +115,7 @@ If you find GEM helpful for your research and applications, please cite our pape
       primaryClass={cs.CL},
       url={https://arxiv.org/abs/2503.06073}, 
 }
+```
 
 ## Acknowledgement
 We thank the authors of [PULSE](https://github.com/AIMedLab/PULSE/tree/dev) and [ECG-Chat](https://github.com/YubaoZhao/ECG-Chat) for their publicly released models, datasets, and training codes.
