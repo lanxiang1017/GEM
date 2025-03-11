@@ -8,7 +8,7 @@
 
 GEM is a multimodal LLM unifying ECG time series, 12-lead ECG images and text for grounded and clinician-aligned ECG interpretation. GEM enables feature-grounded analysis, evidence-driven reasoning, and a clinician-like diagnostic process.
 
-## 🔥 Updates
+## Resource
 
 #### Paper: 📄 [Arxiv](https://arxiv.org/pdf/2503.06073)
 
@@ -16,6 +16,13 @@ GEM is a multimodal LLM unifying ECG time series, 12-lead ECG images and text fo
 
 #### Data: 🤗 [ECG-Grounding](https://huggingface.co/datasets/LANSG/ECG-Grounding)
 
+## 🔥Updates
+
+- 11 Mar 2025: GEM-7B and ECG-Grounding-30k are now available. 
+
+We will continue to release more ECG-Grounding data and associated beat-level features progressively. 
+
+*Stay tuned for updates!*
 
 ## Setup
 
