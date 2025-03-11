@@ -1,6 +1,4 @@
-# GEM
-
-**Empowering MLLM for Grounded ECG Understanding with Time Series and Images** 
+# GEM: Empowering MLLM for Grounded ECG Understanding with Time Series and Images
 
 <p align="left">
     <img src="pics/fig1_v.png" width="90%">
