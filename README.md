@@ -10,6 +10,8 @@ GEM is a multimodal LLM unifying ECG time series, 12-lead ECG images and text fo
 
 ## Resource
 
+#### Project Page: 📖 [Page](https://www.lanxplanet.com/gem_page/)
+
 #### Paper: 📄 [Arxiv](https://arxiv.org/pdf/2503.06073)
 
 #### Model: 🤗 [GEM](https://huggingface.co/LANSG/GEM)
