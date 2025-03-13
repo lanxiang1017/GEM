@@ -74,8 +74,6 @@ After downloading all of them, organize the data as follows in `./data`,
     └── ecg-grounding-test.json
 ├── ecg_jsons
     └── ECG_Grounding_30k.json
-├── ecg_grounding_test_data
-    └── ecg-grounding-test.json
 
 ```
 
