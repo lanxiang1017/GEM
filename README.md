@@ -1,12 +1,49 @@
-# GEM: Empowering MLLM for Grounded ECG Understanding with Time Series and Images
+<div align="center">
+
+<h1> GEM: Empowering MLLM for Grounded ECG Understanding with Time Series and Images </h1>
+
+<h5 align="center"> If you find this project useful, please give us a star🌟.
+
+<h5 align="center"> 
+
+<a href='https://www.lanxplanet.com/GEM-ECG/'><img src='https://img.shields.io/badge/Homepage-8A2BE2'></a>
+<a href='https://arxiv.org/pdf/2503.06073'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
+<a href='https://huggingface.co/LANSG/GEM'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-blue'>
+<a href='https://huggingface.co/datasets/LANSG/ECG-Grounding'><img src='https://img.shields.io/badge/Dataset-Huggingface-yellow'>
+
+
+[Xiang Lan](https://www.lanxplanet.com/)<sup>1</sup>,
+[Feng Wu](https://meiyoufeng116.github.io)<sup>1</sup>,
+[Kai He](https://kaihe-better.github.io)<sup>1</sup>,
+[Qinghao Zhao]()<sup>2</sup>,
+[Shenda Hong](https://hsd1503.github.io/)<sup>3</sup>,
+[Mengling Feng](https://www.mornin-feng.com/me)<sup>1</sup>
+
+<sup>1</sup>[National University of Singapore](https://nus.edu.sg/)
+
+<sup>2</sup>[Peking University People's Hospital](https://english.pkuph.cn/)
+
+<sup>3</sup>[Peking University](https://english.pku.edu.cn/)
+
 
 <p align="left">
     <img src="pics/fig1_v.png" width="90%">
 </p>
 
+</h5>
+</div>
+
 ## Introduction
 
-GEM is a multimodal LLM unifying ECG time series, 12-lead ECG images and text for grounded and clinician-aligned ECG interpretation. GEM enables feature-grounded analysis, evidence-driven reasoning, and a clinician-like diagnostic process.
+While recent multimodal large language models (MLLMs) have advanced automated ECG interpretation, they still face two key limitations: (1) insufficient multimodal synergy between time series signals and visual ECG representations, and (2) limited explainability in linking diagnoses to granular waveform evidence. We introduce GEM, the first MLLM unifying ECG time series, 12-lead ECG images and text for grounded and clinician-aligned ECG interpretation. GEM enables feature-grounded analysis, evidence-driven reasoning, and a clinician-like diagnostic process through three core innovations: a dual-encoder framework extracting complementary time series and image features, cross-modal alignment for effective multimodal understanding, and knowledge-guided instruction generation for generating high-granularity grounding data (ECG-Grounding) linking diagnoses to measurable parameters (e.g., QRS/PR Intervals). Additionally, we propose the Grounded ECG Understanding task, a clinically motivated benchmark designed to comprehensively assess the MLLM's capability in grounded ECG understanding. Experimental results on both existing and our proposed benchmarks show GEM significantly improves predictive performance (CSN +7.4%↑), explainability (+22.7%↑), and grounding (+24.8%↑), making it more suitable for real-world clinical applications.
+
+## 🔥Updates
+
+- 11 Mar 2025: GEM-7B and ECG-Grounding-30k are now available. 
+
+We will continue to release more ECG-Grounding data and associated beat-level features progressively. 
+
+*Stay tuned for updates!*
 
 ## Resource
 
@@ -17,14 +54,6 @@ GEM is a multimodal LLM unifying ECG time series, 12-lead ECG images and text fo
 #### Model: 🤗 [GEM](https://huggingface.co/LANSG/GEM)
 
 #### Data: 🤗 [ECG-Grounding](https://huggingface.co/datasets/LANSG/ECG-Grounding)
-
-## 🔥Updates
-
-- 11 Mar 2025: GEM-7B and ECG-Grounding-30k are now available. 
-
-We will continue to release more ECG-Grounding data and associated beat-level features progressively. 
-
-*Stay tuned for updates!*
 
 ## Setup
 
