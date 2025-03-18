@@ -22,7 +22,7 @@
 <sup>1</sup>[National University of Singapore](https://nus.edu.sg/) <sup>2</sup>[Peking University People's Hospital](https://english.pkuph.cn/) <sup>3</sup>[Peking University](https://english.pku.edu.cn/)
 
 
-<p align="left">
+<p align="center">
     <img src="pics/fig1_v.png" width="90%">
 </p>
 
