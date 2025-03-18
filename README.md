@@ -19,11 +19,7 @@
 [Shenda Hong](https://hsd1503.github.io/)<sup>3</sup>,
 [Mengling Feng](https://www.mornin-feng.com/me)<sup>1</sup>
 
-<sup>1</sup>[National University of Singapore](https://nus.edu.sg/)
-
-<sup>2</sup>[Peking University People's Hospital](https://english.pkuph.cn/)
-
-<sup>3</sup>[Peking University](https://english.pku.edu.cn/)
+<sup>1</sup>[National University of Singapore](https://nus.edu.sg/) <sup>2</sup>[Peking University People's Hospital](https://english.pkuph.cn/) <sup>3</sup>[Peking University](https://english.pku.edu.cn/)
 
 
 <p align="left">
