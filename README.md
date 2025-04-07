@@ -115,6 +115,8 @@ Pretrained MLLMs:
 
 ```bash GEM/scripts/train_gem.sh```
 
+*Note: You'll need to specify paths first in the training script*
+
 ## Evaluation
 
 For ECG-Grounding:
@@ -124,7 +126,7 @@ For ECG-Grounding:
   - step 4. process evaluation reports and get scores: ```GEM/gem_evaluation/process_grounding_scores.ipynb```
 
 For ECG-Bench:
-  - step 1. generate results: ```GEM/evaluation/gem_bench/bench_ecggrounding.sh```
+  - step 1. generate results: ```GEM/evaluation/gem_bench/bench_ecgbench.sh```
   - step 2. evaluate results: ```GEM/evaluation/evaluate_ecgbench.py```
   - step 3. evaluate reports: ```GEM/evaluation/eval_report.py```
 
