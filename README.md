@@ -72,6 +72,7 @@ ECG:
 
 Images:
 - [ECG-Grounding-Images](https://huggingface.co/datasets/LANSG/ECG-Grounding) (mimic_gen)
+- [ECG-Instruct](https://huggingface.co/datasets/PULSE-ECG/ECGInstruct/tree/main)
 - [ECG-Bench](https://huggingface.co/datasets/PULSE-ECG/ECGBench)
 
 After downloading all of them, organize the data as follows in `./data`,
