@@ -132,9 +132,9 @@ For ECG-Bench:
   - step 3. evaluate reports: ```GEM/evaluation/eval_report.py```
 
 *Note*
-- 1. You need to specify the result paths in all evaluation scripts
+- 1. You need to specify the result paths in all evaluation scripts.
 - 2. If you download our trained GEM-7B model from HuggingFace, you must set the path to ECG-CoCa in the config.json file (under "mm_ecg_tower") before using it.
-- 3. bench_ecggrounding.sh is designed to use multiple GPUs to generate interpretations simultaneously, reducing generation time. To use it, you must split the test file (ecg-grounding-test-mimiciv.json) into multiple chunks. If you prefer a simpler setup, you can use bench_ecgbench.sh instead; the core generation functions are the same.
+- 3. bench_ecggrounding.sh is designed to use multiple GPUs to generate interpretations simultaneously, reducing generation time. To use it, you must split the test file (ecg-grounding-test-mimiciv.json) into multiple chunks. If you prefer a simpler setup, you can use bench_ecgbench.sh instead. The core generation functions are the same. Example usage: ```bash bench_ecgbench.sh -m PATH_TO_GEM -d ecg-grounding-test-mimiciv```.
  
 
 ## Citation
