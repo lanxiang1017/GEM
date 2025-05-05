@@ -97,7 +97,7 @@ After downloading all of them, organize the data as follows in `./data`,
     └── ptb-xl
 ├── ecg_bench
     └── images
-    └── ecg-grounding-test.json
+    └── ecg-grounding-test-mimiciv.json
 ├── ecg_jsons
     └── ECG_Grounding_30k.json
 
