@@ -114,9 +114,9 @@ Pretrained MLLMs:
 
 ## Train
 
-```bash GEM/scripts/train_gem.sh```
-
-*Note: You'll need to specify paths first in the training script*
+For training from scratch:
+  - step 1. specify paths in ```GEM/scripts/train_gem.sh```
+  - step 2. run ```bash GEM/scripts/train_gem.sh```
 
 ## Evaluation
 
@@ -131,7 +131,10 @@ For ECG-Bench:
   - step 2. evaluate results: ```GEM/evaluation/evaluate_ecgbench.py```
   - step 3. evaluate reports: ```GEM/evaluation/eval_report.py```
 
-*Note: You'll need to specify result paths first in all evaluation scripts*
+*Note*
+- 1. You need to specify the result paths in all evaluation scripts
+- 2. If you download our trained GEM-7B model from HuggingFace, you must set the path to ECG-CoCa in the config.json file (under "mm_ecg_tower") before using it.
+ 
 
 ## Citation
 
