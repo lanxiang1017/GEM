@@ -31,7 +31,7 @@
 
 ## Introduction
 
-While recent multimodal large language models (MLLMs) have advanced automated ECG interpretation, they still face two key limitations: (1) insufficient multimodal synergy between time series signals and visual ECG representations, and (2) limited explainability in linking diagnoses to granular waveform evidence. We introduce GEM, the first MLLM unifying ECG time series, 12-lead ECG images and text for grounded and clinician-aligned ECG interpretation. GEM enables feature-grounded analysis, evidence-driven reasoning, and a clinician-like diagnostic process through three core innovations: a dual-encoder framework extracting complementary time series and image features, cross-modal alignment for effective multimodal understanding, and knowledge-guided instruction generation for generating high-granularity grounding data (ECG-Grounding) linking diagnoses to measurable parameters (e.g., QRS/PR Intervals). Additionally, we propose the Grounded ECG Understanding task, a clinically motivated benchmark designed to comprehensively assess the MLLM's capability in grounded ECG understanding. Experimental results on both existing and our proposed benchmarks show GEM significantly improves predictive performance (CSN +7.4%↑), explainability (+22.7%↑), and grounding (+24.8%↑), making it more suitable for real-world clinical applications.
+While recent multimodal large language models (MLLMs) have advanced automated ECG interpretation, they still face two key limitations: (1) insufficient multimodal synergy between time series signals and visual ECG representations, and (2) limited explainability in linking diagnoses to granular waveform evidence. We introduce GEM, the first MLLM unifying ECG time series, 12-lead ECG images and text for grounded and clinician-aligned ECG interpretation. GEM enables feature-grounded analysis, evidence-driven reasoning, and a clinician-like diagnostic process through three core innovations: a dual-encoder framework extracting complementary time series and image features, cross-modal alignment for effective multimodal understanding, and knowledge-guided instruction generation for generating high-granularity grounding data (ECG-Grounding) linking diagnoses to measurable parameters (e.g., QRS/PR Intervals). Additionally, we propose the Grounded ECG Understanding task, a clinically motivated benchmark designed to comprehensively assess the MLLM's capability in grounded ECG understanding. Experimental results on both existing and our proposed benchmarks show GEM significantly improves predictive performance (CSN +7.4%↑), explainability (+22.7%↑), and grounding (+25.3%↑), making it more suitable for real-world clinical applications.
 
 ## 🔥Updates
 
@@ -98,6 +98,7 @@ After downloading all of them, organize the data as follows in `./data`,
 ├── ecg_bench
     └── images
     └── ecg-grounding-test-mimiciv.json
+    └── ecg-grounding-test-ptbxl.json
 ├── ecg_jsons
     └── ECG_Grounding_30k.json
 
@@ -132,7 +133,7 @@ For ECG-Bench:
   - step 3. evaluate reports: ```GEM/evaluation/eval_report.py```
 
 *Note*
-- 1. You need to specify the result paths in all evaluation scripts
+- 1. You need to specify the result paths in all evaluation scripts (For ECG-Bench, you also need to specify the path to question files in evaluate_ecgbench.py).
 - 2. If you download our trained GEM-7B model from HuggingFace, you must set the path to ECG-CoCa in the config.json file (under "mm_ecg_tower") before using it.
 - 3. bench_ecggrounding.sh is designed to use multiple GPUs to generate interpretations simultaneously, reducing generation time. To use it, you must split the test file (ecg-grounding-test-mimiciv.json) into multiple chunks. If you prefer a simpler setup, you can use bench_ecgbench.sh instead; the core generation functions are the same.
  

@@ -1,20 +1,12 @@
 import json
 from openai import OpenAI
 import jinja2
-import re
 from tqdm import tqdm
-from PIL import Image
-import io
 import os
-import base64
 import argparse
 
 def call_openai_api(prompt, api_key, version):
     client = OpenAI(api_key = api_key)
-
-    #TODO uncomment this part if you want to use image as input
-    # base64_image = image_to_base64(image_path)
-    #TODO -----------------------------------------------------
 
     completion = client.chat.completions.create(
         model=version,
@@ -26,12 +18,6 @@ def call_openai_api(prompt, api_key, version):
                         "type": "text",
                         "text": prompt
                     },
-                    #TODO uncomment this part if you want to use image as input
-                    # {
-                    #     "type": "image_url",
-                    #     "image_url": {"url": f"data:image/png;base64,{base64_image}"},
-                    # },
-                    #TODO -----------------------------------------------------
                 ],
              }
         ],
@@ -39,12 +25,6 @@ def call_openai_api(prompt, api_key, version):
 
     return completion.choices[0].message.content.strip()
  
-# Function to convert image to base64
-def image_to_base64(image_path):
-    with Image.open(image_path) as image:
-        buffered = io.BytesIO()
-        image.save(buffered, format="PNG")
-        return base64.b64encode(buffered.getvalue()).decode('utf-8')
 
 def construct_prompt(template_raw, val_dic):
     template = jinja2.Template(template_raw, trim_blocks=True, lstrip_blocks=True)
@@ -57,12 +37,12 @@ if __name__ == "__main__":
 
     api_key = ""
 
-    with open("prompts_evaluation.txt", "r") as f:
+    with open("GEM_Evaluation_PTBXL/prompts_evaluation.txt", "r") as f:
         template_raw = f.read()
 
     ## ! results path
-    my_model_version = "gem7b_results"
-    file_path = f"../grounding_model_outputs/raw_results/{my_model_version}.json"
+    my_model_version = "gem7b"
+    file_path = f"GEM_Evaluation_PTBXL/raw_results/{my_model_version}_ptbxl_results.json"
 
     with open(file_path, 'r', encoding='utf-8') as file:
         json_data = json.load(file)
@@ -74,7 +54,7 @@ if __name__ == "__main__":
 
     model_version = "gpt-4o-2024-08-06"
 
-    save_dir = f"grounding_model_evals/{my_model_version}/batch_{args.start}_to_{args.end}"
+    save_dir = f"GEM_Evaluation_PTBXL/gpt_evaluated/{my_model_version}/batch_{args.start}_to_{args.end}"
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)
 
@@ -96,5 +76,5 @@ if __name__ == "__main__":
         file_path = os.path.join(save_dir, f"{ecg_id}.json")
 
         with open(file_path, 'w', encoding='utf-8') as file:
-            json.dump(rst_dic, file, ensure_ascii=False, indent=4) 
+            json.dump(rst_dic, file, ensure_ascii=False, indent=4)
     
