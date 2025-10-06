@@ -35,9 +35,9 @@ While recent multimodal large language models (MLLMs) have advanced automated EC
 
 ## 🔥Updates
 
-- Sep 2025: GEM has been accepted to NeurIPS 2025! More updates coming soon.
-- Jul 2025: The full version of MIMIC-IV-ECG with beat-level features and GPT-4o interpretations has been released — check it out [here](https://arxiv.org/pdf/2507.15255)!
-- Mar 2025: GEM-7B and ECG-Grounding-30k are now available. 
+- **[Sep 2025]** GEM has been accepted to NeurIPS 2025! More updates coming soon.
+- **[Jul 2025]** The full version of MIMIC-IV-ECG with beat-level features and GPT-4o interpretations has been released — check it out [here](https://arxiv.org/pdf/2507.15255)!
+- **[Mar 2025]** GEM-7B and ECG-Grounding-30k are now available. 
 
 We will continue to release more ECG-Grounding data and associated beat-level features progressively. 
 
