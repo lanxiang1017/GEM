@@ -109,7 +109,7 @@ After downloading all of them, organize the data as follows in `./data`,
 ## Pretrained Model Preparation
 
 Pretrained ECG Encoder:
-  - [ECG-CoCa](https://github.com/YubaoZhao/ECG-Chat) : place it in ```GEM/ecg_coca/open_clip/checkpoint```
+  - [ECG-CoCa](https://drive.google.com/drive/folders/1-0lRJy7PAMZ7bflbOszwhy3_ZwfTlGYB?usp=sharing) : download ```cpt_wfep_epoch_20.pt```, place it in ```GEM/ecg_coca/open_clip/checkpoint```
 
 Pretrained MLLMs:
   - [PULSE](https://huggingface.co/PULSE-ECG/PULSE-7B)  
