@@ -1,0 +1,35 @@
+{
+    "sampling_frequency": 0,
+    "width": 0,
+    "height": 0,
+    "x_grid": 0,
+    "y_grid": 0,
+    "leads":[
+        {
+            "text_bounding_box": 
+            {
+                "0": [0, 0],
+                "1": [0, 0],
+                "2": [0, 0],
+                "3": [0, 0]
+            },
+            "lead_bounding_box":
+            {
+                "0": [0, 0],
+                "1": [0, 0],
+                "2": [0, 0],
+                "3": [0, 0]
+            },
+            "lead_name": "",
+            "start_sample": 0,
+            "end_sample": 0,
+            "plotted_pixels":
+            [
+                [0, 0],
+                [0, 0]
+            ]
+        } 
+    ]
+}
+
+

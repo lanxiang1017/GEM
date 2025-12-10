@@ -1,0 +1,6 @@
+Date:                              18 Feb 99    HR 37 bpm          Abnormal ECG unconfirmed                        
+Name:                                                                            Junction bradycardia found
+Identifier:                        PR 0.000s   QRS 0.104s          Incomplete right bundle
+Age: 82                           QT/QTc        0.562s/0.441s      Inferior infarction age undetermined
+P-QRS-T Axes                  8 degrees
+aVR

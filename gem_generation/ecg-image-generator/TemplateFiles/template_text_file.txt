@@ -1,0 +1,5 @@
+Date:                          12-Lead I                         
+Name:                          Height: 
+Sex:                           Weight:      
+Age:                           Dx:     
+                                  

@@ -1,0 +1,70 @@
+{
+    "sampling_frequency": 0,
+    "width": 0,
+    "height": 0,
+    "grid line width": 0,
+    "grid_line_color_major": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "grid_line_color_minor": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "ecg_plot_color": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "leads":[
+        {
+            "text_bounding_box": 
+            {
+                "0": [0, 0],
+                "1": [0, 0],
+                "2": [0, 0],
+                "3": [0, 0]
+            },
+            "lead_bounding_box":
+            {
+                "0": [0, 0],
+                "1": [0, 0],
+                "2": [0, 0],
+                "3": [0, 0]
+            },
+            "lead_name": "",
+            "start_sample": 0,
+            "end_sample": 0,
+            "plotted_pixels":
+            [
+                [0, 0],
+                [0, 0]
+            ]
+        } 
+    ],
+    "x_grid": 0,
+    "y_grid": 0,
+    "dc_pulse": false,
+    "bw": false,
+    "gridlines": false,
+    "printed_text": false,
+    "number_of_columns_in_image": 0,
+    "resolution": 0,
+    "pad_inches": 0,
+    "full_mode_lead": "",
+    "handwritten_text": false,
+    "num_words": 0,
+    "x_offset_for_handwritten_text": 0,
+    "y_offset_for_handwritten_text": 0,
+    "wrinkles": false,
+    "crease angle": 0,
+    "number_of_creases_horizontally": 0,
+    "number_of_creases_vertically": 0,
+    "augment": false,
+    "crop": 0,
+    "temp": 0,
+    "rotate": 0,
+    "noise": 0
+}
