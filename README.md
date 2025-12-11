@@ -74,7 +74,7 @@ ECG:
 
 Images:
 - [ECG-Grounding-Images](https://huggingface.co/datasets/LANSG/ECG-Grounding) (mimic_gen)
-- [PTB-XL-Test-Images](https://huggingface.co/datasets/LANSG/ECG-Grounding) (ptb-xl-gen-image)
+- [PTB-XL-Test-Images](https://huggingface.co/datasets/LANSG/ECG-Grounding) (ptb-xl-gen)
 - [ECG-Instruct](https://huggingface.co/datasets/PULSE-ECG/ECGInstruct/tree/main)
 - [ECG-Bench](https://huggingface.co/datasets/PULSE-ECG/ECGBench)
 
@@ -95,7 +95,7 @@ After downloading all of them, organize the data as follows in `./data`,
     └── csn_part_noise_layout_papersize
     └── gen_images
       └── mimic_gen
-      └── ptbxl_gen
+      └── ptb-xl-gen
     └── mimic
     └── mimic_v4
     └── ptb-xl
