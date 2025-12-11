@@ -147,14 +147,13 @@ For ECG-Bench:
 If you find GEM helpful for your research and applications, please cite our paper:
 
 ```bibtex
-@misc{lan2025gemempoweringmllmgrounded,
-      title={GEM: Empowering MLLM for Grounded ECG Understanding with Time Series and Images}, 
-      author={Xiang Lan and Feng Wu and Kai He and Qinghao Zhao and Shenda Hong and Mengling Feng},
-      year={2025},
-      eprint={2503.06073},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2503.06073}, 
+@inproceedings{
+lan2025gem,
+title={{GEM}: Empowering {MLLM} for Grounded {ECG} Understanding with Time Series and Images},
+author={Xiang Lan and Feng Wu and Kai He and Qinghao Zhao and Shenda Hong and Mengling Feng},
+booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},
+year={2025},
+url={https://openreview.net/forum?id=idtZwmjakN}
 }
 ```
 
