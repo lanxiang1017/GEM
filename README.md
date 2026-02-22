@@ -35,6 +35,7 @@ While recent multimodal large language models (MLLMs) have advanced automated EC
 
 ## 🔥Updates
 
+- **[Feb 2026]** New RL-trained reasoning models are released! [ECG-R1: Protocol-Guided and Modality-Agnostic MLLM for Reliable ECG Interpretation](https://arxiv.org/pdf/2602.04279) [(Demo)](http://ai.heartvoice.com.cn/ECG-R1/) [(Code)](https://github.com/PKUDigitalHealth/ECG-R1).
 - **[Sep 2025]** GEM has been accepted to NeurIPS 2025! More updates coming soon.
 - **[Jul 2025]** The full version of MIMIC-IV-ECG with beat-level features and GPT-4o interpretations has been released — check it out [here](https://arxiv.org/pdf/2507.15255)!
 - **[Mar 2025]** GEM-7B and ECG-Grounding-30k are now available. 
