@@ -1,0 +1,25 @@
+{
+    "embed_dim": 512,
+    "ecg_cfg": {
+        "seq_length": 5000,
+        "lead_num": 12,
+        "layers": 12,
+        "width": 768,
+        "patch_size": 50,
+        "output_tokens": true
+    },
+    "text_cfg": {
+        "hf_model_name": "ncbi/MedCPT-Query-Encoder",
+        "hf_tokenizer_name": "ncbi/MedCPT-Query-Encoder",
+        "hf_proj_type": "linear",
+        "width": 768,
+        "output_tokens": true
+    },
+    "multimodal_cfg": {
+        "context_length": 76,
+        "width": 768,
+        "heads": 8,
+        "layers": 12
+    },
+    "custom_text": true
+}
